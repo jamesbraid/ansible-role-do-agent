@@ -90,7 +90,7 @@
     enabled: true
     state: started
 
-- include: "{{ item }}"
+- include_tasks: "{{ item }}"
   with_first_found:
     - files:
         - "{{ ansible_os_family|lower }}.yml"
